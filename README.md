@@ -1,17 +1,18 @@
-# Creating a helm chart repository:
+# Helm Chart repository:
 
-Check if the directory is ok:
-```
-helm lint charts/helloworld/
-```
 
-Make a robots.txt file:
+Add repository:
 ```
-echo -e "User-Agent: *\nDisallow: /" > robots.tx
+helm repo add myrepo https://mario21ic.github.io/helloworld-helmchart/
 ```
 
-Create a package:
+Search helm charts inside myrepo:
 ```
-helm package charts/helloworld
+helm search repo myrepo
 ```
 
+Install:
+```
+helm install hello-helmchart-repo myrepo/helloworld
+helm list -A
+```
