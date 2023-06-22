@@ -19,3 +19,5 @@ Create index.yaml file:
 ```
 $ helm repo index --url https://mario21ic.github.io/helloworld-helmchart/ .
 ``
+
+Based on https://www.opcito.com/blogs/creating-helm-repository-using-github-pages
